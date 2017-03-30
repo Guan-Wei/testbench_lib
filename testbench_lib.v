@@ -7,7 +7,7 @@ module uart_tb;
 // Testbench function.
 // Clock
 reg  clk_100m;
-
+reg  rst_n;
 //------------------------------------------------------------------------------
 // Parameter.
 //------------------------------------------------------------------------------
@@ -23,4 +23,12 @@ begin 
   forever #(clkper_100m/2) clk_100m = ~clk_100m;
 end
 
+// REST_N Generate   
+initial
+begin        
+      rst_n = 1'b1;     
+  #50 rst_n = 1'b0;    
+  #50 rst_n = 1'b1;    
+  #FINISH    $stop;
+end 
 endmodule
