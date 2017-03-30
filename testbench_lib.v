@@ -1,5 +1,5 @@
 `timescale 1ns / 1ns
-module uart_tb;
+module top_mod_tb;
 
 //------------------------------------------------------------------------------
 // wire & registor declarations.
@@ -18,7 +18,7 @@ parameter clkper_100m   = 10;
 //------------------------------------------------------------------------------
 //CLOCK -100 MHZ (10ns) Generate
 initial 
-begin  
+beginin  
   clk_100m = 0;  
   forever #(clkper_100m/2) clk_100m = ~clk_100m;
 end
@@ -31,4 +31,11 @@ begin       
   #50 rst_n = 1'b1;    
   #FINISH    $stop;
 end 
+
+//------------------------------------------------------------------------------
+// Test Function.
+//------------------------------------------------------------------------------
+// You can put your model in there.
+
+
 endmodule
