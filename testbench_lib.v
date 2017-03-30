@@ -18,7 +18,7 @@ parameter clkper_100m   = 10;
 //------------------------------------------------------------------------------
 //CLOCK -100 MHZ (10ns) Generate
 initial 
-beginin  
+begin  
   clk_100m = 0;  
   forever #(clkper_100m/2) clk_100m = ~clk_100m;
 end
