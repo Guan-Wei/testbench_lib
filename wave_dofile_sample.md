@@ -31,13 +31,13 @@ add wave -noupdate -radix unsigned /top_tb/psu_ok
 add wave -noupdate {/top_tb/i2cm_inst[2]/u_i2cm/write_i2c_address/i}
 ```
 
-***configure***
+***[Configure]***
 ```JSP
 configure wave -timelineunits ns
 ```
 
 # -------------------------------------------------------
-***After do file***
+***[After do file]***
 ```JSP
 add wave -position insertpoint sim:/top_tb/DUT/psu_prsnt
 ```
