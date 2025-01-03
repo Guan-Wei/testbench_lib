@@ -8,7 +8,7 @@ add wave -noupdate -divider FLAG
 ```JSP
 add wave -noupdate -color Orange -radix hexadecimal /tb/DUT/psu_ok
 add wave -noupdate -color Orange -radix unsigned    /tb/DUT/psu_ok
-add wave -noupdate -color Orange -radix ascii /tb/DUT/psu_ok
+add wave -noupdate -color Orange -radix ascii       /tb/DUT/psu_ok
 ```
 
 ***[Add group]:***
