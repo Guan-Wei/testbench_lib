@@ -7,23 +7,22 @@ add wave -noupdate -divider FLAG
 ***[Change color]:***
 ```JSP
 add wave -noupdate -color Orange -radix hexadecimal /tb/DUT/psu_ok
+add wave -noupdate -color Orange -radix unsigned    /tb/DUT/psu_ok
+add wave -noupdate -color Orange -radix ascii /tb/DUT/psu_ok
 ```
 
 ***[Add group]:***
 ```JSP
-add wave -noupdate -group {sequence} /top_tb/DUT/psu_ok
+add wave -noupdate -group {sequence} -color Orange -radix hexadecimal /top_tb/DUT/psu_ok
+add wave -noupdate -group {sequence} -color Orange -radix unsigned    /top_tb/DUT/psu_ok
+add wave -noupdate -group {sequence} -color Orange -radix ascii       /top_tb/DUT/psu_ok
 ```
 
 ***[Add group of group]:***
 ```JSP
-add wave -noupdate -group {sequence} -group {VRD}  /top_tb/DUT/psu_ok
-```
-
-***[Modify data type]:***
-```JSP
-add wave -noupdate -radix ascii /top_tb/psu_ok
-add wave -noupdate -radix hexadecimal /top_tb/psu_ok
-add wave -noupdate -radix unsigned /top_tb/psu_ok
+add wave -noupdate -group {sequence} -group {VRD} -color Orange -radix hexadecimal /top_tb/DUT/psu_ok
+add wave -noupdate -group {sequence} -group {VRD} -color Orange -radix unsigned    /top_tb/DUT/psu_ok
+add wave -noupdate -group {sequence} -group {VRD} -color Orange -radix ascii       /top_tb/DUT/psu_ok
 ```
 
 ***[How to add variable of task]:***
