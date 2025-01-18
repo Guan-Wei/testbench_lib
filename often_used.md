@@ -4,10 +4,8 @@
 ```verilog
 
 initial begin
-
-force xxx_pgd = 1'b0;
-release xxx_pgd;
-
+    force xxx_pgd = 1'b0;
+    release xxx_pgd;
 end
 
 ```
