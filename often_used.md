@@ -10,5 +10,12 @@ end
 
 ```
 
+***[monitor FSM]***
+```verilog
+`define EN_PWR_STATUS // TODO: trace
 
-
+`ifdef EN_PWR_STATUS
+  // Monitor the output
+  $monitor($time,"[FSM] %s(%h)",DUT.fsm_inst.sim_st_ps, DUT.fsm_inst.st_ps);
+`endif
+```
