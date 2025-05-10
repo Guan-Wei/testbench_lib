@@ -13,10 +13,12 @@ end
 ```verilog
 `define EN_PWR_STATUS
 
-`ifdef EN_PWR_STATUS
-  // Monitor the output
-  $monitor($time,"[FSM] %s(%h)",DUT.fsm_inst.sim_st_ps, DUT.fsm_inst.st_ps);
-`endif
+initial begin
+    `ifdef EN_PWR_STATUS
+      // Monitor the output
+      $monitor($time,"[FSM] %s(%h)",DUT.fsm_inst.sim_st_ps, DUT.fsm_inst.st_ps);
+    `endif
+end
 ```
 
 ***[VRD fault]:***
@@ -29,7 +31,6 @@ end
 // ==================================================================
 wire [3:0] pwr_st_ps;
 reg PDG_P3V3;
-
 
 `ifdef PWR_FAULT
     initial begin
