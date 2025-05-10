@@ -11,7 +11,7 @@ end
 ***[monitor FSM]:***
 
 ```verilog
-`define EN_PWR_STATUS // TODO: trace
+`define EN_PWR_STATUS
 
 `ifdef EN_PWR_STATUS
   // Monitor the output
@@ -24,8 +24,12 @@ end
 ```verilog
 `define PWR_FAULT
 
+// ==================================================================
+// wire & reg
+// ==================================================================
 wire [3:0] pwr_st_ps;
 reg PDG_P3V3;
+
 
 `ifdef PWR_FAULT
     initial begin
