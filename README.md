@@ -2,7 +2,7 @@
 Build the testbench library.
 
 
-[DO File](https://github.com/Guan-Wei/testbench_lib/blob/master/wave_dofile_sample.md)
+[DO File](https://github.com/Guan-Wei/testbench_lib/blob/master/wave_dofile/)
 
 [外框](https://github.com/Guan-Wei/testbench_lib/blob/master/testbench_lib.v)
 
